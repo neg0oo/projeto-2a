@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Horizonte | Educação para o Futuro</title>
+    <style>
+        /* Estilização Geral */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1a5276;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 5px solid #d4ac0d;
+        }
+
+        nav {
+            background: #2471a3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Banner Principal */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1523050335392-9bc5ad06fe33?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        /* Conteúdo */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1a5276;
+            border-left: 5px solid #d4ac0d;
+            padding-left: 10px;
+        }
+
+        /* Grid de Notícias/Avisos */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Rodapé */
+        footer {
+            background: #1a5276;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Colégio Horizonte</h1>
+        <p>Formando mentes brilhantes desde 1995</p>
+    </header>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Matrículas Abertas para 2026!</h1>
+    </div>
+
+    <div class="container">
+        
+        <section id="sobre">
+            <h2>Nossa Instituição</h2>
+            <p>O Colégio Horizonte acredita que a educação vai além da sala de aula. Com uma infraestrutura moderna e professores qualificados, oferecemos um ambiente seguro e estimulante para o desenvolvimento acadêmico e social de nossos alunos.</p>
+        </section>
+
+        <section id="noticias">
+            <h2>Últimas Notícias</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Feira de Ciências 2026</h3>
+                    <p>Preparem seus projetos! A nossa feira anual acontecerá no dia 20 de Junho. Participe!</p>
+                </div>
+                <div class="card">
+                    <h3>Reunião de Pais</h3>
+                    <p>Convidamos todos os responsáveis para a reunião trimestral na próxima sexta-feira às 19h.</p>
+                </div>
+                <div class="card">
+                    <h3>Novo Laboratório</h3>
+                    <p>Inauguramos nosso novo laboratório de robótica com tecnologia de ponta para o Ensino Médio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida? Mande uma mensagem para nossa secretaria.</p>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+                <label for="msg">Mensagem:</label><br>
+                <textarea id="msg" rows="4" style="width: 100%; padding: 8px; margin: 8px 0;"></textarea><br>
+                <button type="button" style="background
+
