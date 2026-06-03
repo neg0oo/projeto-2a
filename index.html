@@ -1,60 +1,304 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colégio PROHERF | Educação e Futuro</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agro Sustentável</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>PRO<span>HERF</span></h1>
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>
+        <span>Agro Sustentável</span>
+      </div>
+      <nav class="nav-desktop">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#pilares">Pilares</a>
+        <a href="#praticas">Práticas</a>
+        <a href="#beneficios">Benefícios</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#inicio" class="nav-mobile-link">Início</a>
+      <a href="#sobre" class="nav-mobile-link">Sobre</a>
+      <a href="#pilares" class="nav-mobile-link">Pilares</a>
+      <a href="#praticas" class="nav-mobile-link">Práticas</a>
+      <a href="#beneficios" class="nav-mobile-link">Benefícios</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1758158286655-f0d93d86e174?w=1600&q=80" alt="Agricultura Sustentável" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content fade-in">
+      <h1>Agro Sustentável</h1>
+      <p>Equilíbrio entre a produção e o meio ambiente</p>
+      <a href="#sobre" class="btn-hero">
+        Descubra Mais
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <h2>O Que é Agricultura Sustentável?</h2>
+        <p>É a produção de alimentos de forma responsável, preservando os recursos naturais para as futuras gerações enquanto mantemos a produtividade e a rentabilidade.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-items">
+          <div class="about-item reveal">
+            <div class="icon-box green">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Matrículas</a></li>
-                    <li><a href="#" class="btn-contato">Contato</a></li>
-                </ul>
-            </nav>
+            <div>
+              <h3>Responsabilidade Ambiental</h3>
+              <p>Proteção do solo, água e biodiversidade através de práticas conscientes que minimizam o impacto ambiental.</p>
+            </div>
+          </div>
+          <div class="about-item reveal">
+            <div class="icon-box green">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div>
+              <h3>Bem-Estar Social</h3>
+              <p>Garantia de condições justas de trabalho e fortalecimento das comunidades rurais através de práticas éticas.</p>
+            </div>
+          </div>
+          <div class="about-item reveal">
+            <div class="icon-box green">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div>
+              <h3>Viabilidade Econômica</h3>
+              <p>Produção eficiente e rentável que assegura a continuidade das atividades agrícolas de forma sustentável.</p>
+            </div>
+          </div>
         </div>
-    </header>
-
-    <main>
-        <section class="banner">
-            <div class="container">
-                <h2>Excelência no Ensino</h2>
-                <p>No Colégio PROHERF, preparamos seu filho para os desafios do amanhã.</p>
-            </div>
-        </section>
-
-        <section class="destaques">
-            <div class="container flex">
-                <div class="card">
-                    <h3>Educação Infantil</h3>
-                    <p>Aprender brincando com segurança e carinho.</p>
-                </div>
-                <div class="card">
-                    <h3>Ensino Médio</h3>
-                    <p>Foco total no vestibular e no mercado de trabalho.</p>
-                </div>
-                <div class="card">
-                    <h3>Esportes</h3>
-                    <p>Diversas modalidades para o desenvolvimento físico.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Colégio PROHERF. Todos os direitos reservados.</p>
+        <div class="about-image-wrap reveal">
+          <img src="https://images.unsplash.com/photo-1722810767143-40a6a7a74b13?w=800&q=80" alt="Agricultura Orgânica" class="about-image" />
+          <div class="about-quote">
+            <p>"O futuro da agricultura está no equilíbrio entre produtividade e preservação."</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
+  <!-- PILARES -->
+  <section id="pilares" class="section pillars">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pilares do Equilíbrio</h2>
+        <p>Os fundamentos que sustentam a harmonia entre produção agrícola e preservação ambiental</p>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar-card reveal">
+          <div class="icon-box blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h3>Produção Eficiente</h3>
+          <p>Maximizar a produtividade agrícola utilizando técnicas modernas e tecnologia, garantindo alimentos de qualidade para a população.</p>
+        </div>
+        <div class="pillar-card reveal">
+          <div class="icon-box cyan">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <h3>Conservação da Água</h3>
+          <p>Uso racional e eficiente dos recursos hídricos através de sistemas de irrigação inteligentes e práticas de manejo sustentável.</p>
+        </div>
+        <div class="pillar-card reveal">
+          <div class="icon-box green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+          </div>
+          <h3>Gestão de Resíduos</h3>
+          <p>Reciclagem e reaproveitamento de resíduos orgânicos, transformando-os em fertilizantes naturais e reduzindo o impacto ambiental.</p>
+        </div>
+        <div class="pillar-card reveal">
+          <div class="icon-box purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+          </div>
+          <h3>Qualidade do Ar</h3>
+          <p>Redução de emissões de gases poluentes através da adoção de práticas agrícolas limpas e uso de energia renovável.</p>
+        </div>
+      </div>
+      <div class="pillars-banner reveal">
+        <h3>Equilíbrio é a Chave</h3>
+        <p>A agricultura sustentável não significa escolher entre produção ou meio ambiente. É sobre encontrar soluções inteligentes que beneficiem ambos, criando um futuro próspero e saudável para todos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRÁTICAS -->
+  <section id="praticas" class="section practices">
+    <div class="container">
+      <div class="section-header">
+        <h2>Práticas Sustentáveis</h2>
+        <p>Técnicas comprovadas que promovem a produtividade enquanto protegem o meio ambiente</p>
+      </div>
+      <div class="practices-grid">
+        <div class="practice-card reveal">
+          <div class="practice-image"><img src="https://images.unsplash.com/photo-1741665604513-392643cd42fe?w=600&q=80" alt="Rotação de Culturas" /><div class="practice-overlay"></div></div>
+          <div class="practice-body"><h3>Rotação de Culturas</h3><p>Alternância de diferentes culturas na mesma área para melhorar a saúde do solo e reduzir pragas.</p></div>
+        </div>
+        <div class="practice-card reveal">
+          <div class="practice-image"><img src="https://images.unsplash.com/photo-1763451327058-cb863796dd6b?w=600&q=80" alt="Controle Biológico" /><div class="practice-overlay"></div></div>
+          <div class="practice-body"><h3>Controle Biológico</h3><p>Uso de predadores naturais e microrganismos benéficos para controlar pragas sem agrotóxicos.</p></div>
+        </div>
+        <div class="practice-card reveal">
+          <div class="practice-image"><img src="https://images.unsplash.com/photo-1774865847207-27958c469a64?w=600&q=80" alt="Agrofloresta" /><div class="practice-overlay"></div></div>
+          <div class="practice-body"><h3>Agrofloresta</h3><p>Integração de árvores com culturas agrícolas para criar sistemas produtivos e biodiversos.</p></div>
+        </div>
+        <div class="practice-card reveal">
+          <div class="practice-image"><img src="https://images.unsplash.com/photo-1670519808728-335b1eb2ef52?w=600&q=80" alt="Energia Renovável" /><div class="practice-overlay"></div></div>
+          <div class="practice-body"><h3>Energia Renovável</h3><p>Uso de energia solar e eólica para reduzir custos e a pegada de carbono das propriedades rurais.</p></div>
+        </div>
+        <div class="practice-card reveal">
+          <div class="practice-image"><img src="https://images.unsplash.com/photo-1758158286655-f0d93d86e174?w=600&q=80" alt="Plantio Direto" /><div class="practice-overlay"></div></div>
+          <div class="practice-body"><h3>Plantio Direto</h3><p>Técnica que mantém a cobertura do solo, reduzindo erosão e conservando umidade e nutrientes.</p></div>
+        </div>
+        <div class="practice-card reveal">
+          <div class="practice-image"><img src="https://images.unsplash.com/photo-1722810767143-40a6a7a74b13?w=600&q=80" alt="Compostagem" /><div class="practice-overlay"></div></div>
+          <div class="practice-body"><h3>Compostagem</h3><p>Transformação de resíduos orgânicos em fertilizante natural, rico em nutrientes para o solo.</p></div>
+        </div>
+      </div>
+      <div class="practices-note reveal">
+        <p><span class="highlight">Importante:</span> A implementação dessas práticas não apenas beneficia o meio ambiente, mas também aumenta a produtividade a longo prazo, reduz custos com insumos e melhora a qualidade dos produtos agrícolas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios" class="section benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2>Benefícios da Agricultura Sustentável</h2>
+        <p>Vantagens concretas para produtores, consumidores e o planeta</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-top">
+            <div class="icon-box green"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div><h3>Preservação Ambiental</h3><p>Proteção dos ecossistemas, biodiversidade e recursos naturais para as futuras gerações.</p></div>
+          </div>
+          <div class="benefit-stat"><div class="stat-number">40%</div><div class="stat-label">redução na erosão do solo</div></div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-top">
+            <div class="icon-box green"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <div><h3>Economia de Recursos</h3><p>Redução de custos com insumos químicos e maior eficiência no uso de água e energia.</p></div>
+          </div>
+          <div class="benefit-stat"><div class="stat-number">30%</div><div class="stat-label">economia em insumos</div></div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-top">
+            <div class="icon-box green"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div><h3>Fortalecimento Comunitário</h3><p>Melhoria na qualidade de vida das comunidades rurais e criação de empregos sustentáveis.</p></div>
+          </div>
+          <div class="benefit-stat"><div class="stat-number">+25%</div><div class="stat-label">geração de empregos</div></div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-top">
+            <div class="icon-box green"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></div>
+            <div><h3>Produtos de Qualidade</h3><p>Alimentos mais saudáveis, livres de agrotóxicos e com maior valor nutricional.</p></div>
+          </div>
+          <div class="benefit-stat"><div class="stat-number">50%</div><div class="stat-label">maior valor de mercado</div></div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-top">
+            <div class="icon-box green"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+            <div><h3>Certificações</h3><p>Acesso a selos de qualidade e certificações que agregam valor aos produtos.</p></div>
+          </div>
+          <div class="benefit-stat"><div class="stat-number">60%</div><div class="stat-label">aumento nas vendas</div></div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-top">
+            <div class="icon-box green"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <div><h3>Resiliência Climática</h3><p>Maior capacidade de adaptação às mudanças climáticas e eventos extremos.</p></div>
+          </div>
+          <div class="benefit-stat"><div class="stat-number">35%</div><div class="stat-label">mais resistência</div></div>
+        </div>
+      </div>
+
+      <div class="cta-banner reveal">
+        <h3>Junte-se ao Movimento</h3>
+        <p>A agricultura sustentável é o caminho para um futuro próspero e equilibrado. Cada ação conta para construir um mundo melhor.</p>
+        <div class="cta-buttons">
+          <button class="btn-cta-white">Saiba Mais</button>
+          <button class="btn-cta-dark">Compartilhe</button>
+        </div>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat-item reveal"><div class="stat-big" data-target="70">0%</div><div class="stat-desc">Redução de Químicos</div></div>
+        <div class="stat-item reveal"><div class="stat-big" data-target="45">0%</div><div class="stat-desc">Economia de Água</div></div>
+        <div class="stat-item reveal"><div class="stat-big" data-target="55">0%</div><div class="stat-desc">Menos CO₂</div></div>
+        <div class="stat-item reveal"><div class="stat-big" data-target="80">0%</div><div class="stat-desc">Solo Saudável</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo logo-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>
+            <span>Agro Sustentável</span>
+          </div>
+          <p>Promovendo a agricultura sustentável e o equilíbrio entre produção e meio ambiente.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul><li><a href="#inicio">Início</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#pilares">Pilares</a></li><li><a href="#praticas">Práticas</a></li><li><a href="#beneficios">Benefícios</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Recursos</h4>
+          <ul><li><a href="#">Artigos</a></li><li><a href="#">Guias Práticos</a></li><li><a href="#">Vídeos Educativos</a></li><li><a href="#">Eventos</a></li><li><a href="#">Parceiros</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul class="contact-list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>contato@agrosustentavel.com.br</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.61 4.49 2 2 0 0 1 3.58 2.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.02-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(00) 0000-0000</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Sua cidade, Estado — CEP 00000-000</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Agro Sustentável. Todos os direitos reservados.</p>
+        <div class="footer-links"><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
